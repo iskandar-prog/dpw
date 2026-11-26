@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog UMKM - Minggu 4</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class', // Dukungan Dark Mode[span_3](start_span)[span_3](end_span)
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+  <!-- Header & Navbar (Flexbox & Responsive Spacing)[span_4](start_span)[span_4](end_span) -->
+  <header class="p-4 bg-white dark:bg-gray-800 shadow-md flex justify-between items-center border-b border-gray-200 dark:border-gray-700">
+    <h1 class="text-xl font-bold tracking-wide">Toko UMKM Saya</h1>
+    <button id="dark-toggle" class="p-2 bg-gray-200 dark:bg-gray-700 rounded-lg transition-all hover:opacity-80">
+      🌙 / ☀️
+    </button>
+  </header>
+
+  <!-- Main Content (Responsive Grid Layout: Mobile 1 col, Tablet 2 col, Desktop 3 col)[span_5](start_span)[span_5](end_span) -->
+  <main class="max-w-6xl mx-auto p-6">
+    <h2 class="text-2xl font-semibold mb-6">Katalog Produk</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Card Produk 1 (Shadow, Rounded, Hover Transition)[span_6](start_span)[span_6](end_span) -->
+      <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR75ruj4IrRr03W7STJwgg7nYSeu-43lI4nmEkNoxUToQ&s=10"" alt="Produk 1" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-lg font-bold">Produk Kerajinan A</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400 my-2">Deskripsi singkat produk lokal berkualitas tinggi.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-lg font-bold text-indigo-600 dark:text-indigo-400">Rp 50.000</span>
+          <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">Beli</button>
+        </div>
+      </div>
+
+      <!-- Card Produk 2 -->
+      <div class="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqInTgRxQl9LzN7Y7jp-czXcPodJqcxPe0NmIkA9YPkg&s=10"" alt="Produk 2" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-lg font-bold">Produk Kuliner B</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400 my-2">Cemilan khas daerah yang lezat dan gurih.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-lg font-bold text-indigo-600 dark:text-indigo-400">Rp 25.000</span>
+          <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">Beli</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
